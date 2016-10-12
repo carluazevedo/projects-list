@@ -43,6 +43,7 @@ function listProjects() {
 				echo '<li><a href="'.$data.'">'.$data.'</a></li>'.PHP_EOL;
 			}
 			?>
+			<li><a href="http://localhost/phpmyadmin">phpmyadmin</a></li>
 		</ul>
 	</body>
 </html>
