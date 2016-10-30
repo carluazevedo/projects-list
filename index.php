@@ -12,7 +12,7 @@ function listProjects() {
 	}
 
 	closedir($dir_curr);
-
+	sort($dir_content);
 	return $dir_content;
 }
 ?>
@@ -38,12 +38,12 @@ function listProjects() {
 		<h1>Projetos - Apache</h1>
 
 		<ul>
+			<li>&gt; <a href="http://localhost/phpmyadmin" target="_blank">phpmyadmin</a></li>
 			<?php
 			foreach (listProjects() as $data) {
 				echo '<li><a href="'.$data.'">'.$data.'</a></li>'.PHP_EOL;
 			}
 			?>
-			<li><a href="http://localhost/phpmyadmin" target="_blank">phpmyadmin</a></li>
 		</ul>
 	</body>
 </html>
